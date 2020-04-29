@@ -22,7 +22,7 @@ def drawDifferentCircle(circlesList,image):
             # cv2.circle(image, (circlesList[count][1], circlesList[count][2]), circlesList[count][3], (0, 255, 0), 4)
             cv2.putText(image, str(circlesList[count][0]), (circlesList[count][1], circlesList[count][2]), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 1, cv2.LINE_AA)
             cv2.rectangle(image, (circlesList[count][1] - 5, circlesList[count][2] - 5), (circlesList[count][1] + 5, circlesList[count][2] + 5), (255, 255, 255), -1)
-            pyautogui.moveTo(175+circlesList[count][1], 400+circlesList[count][2])
+            # pyautogui.moveTo(175+circlesList[count][1], 400+circlesList[count][2])
             # pyautogui.click()
             # time.sleep(0.5)
     return image
